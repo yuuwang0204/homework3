@@ -38,9 +38,6 @@ nav a:hover{
   text-decoration: wavy underline;
 }
 
-nav a:focus{
-  border-top: solid 2px black;
-}
 
 .skip a{
   background: white;
@@ -50,8 +47,9 @@ nav a:focus{
   transition: top 1s ease-out;
   z-index: 1;
   position: relative;
-  left: -500px;
   top: 40px;
+  left: -500px;
+  transform: translateY(-100%);
 
   /*Your code here - position relative to the parent */
   /*Your code here - place 40px higher */;
@@ -68,11 +66,14 @@ nav a:focus{
   position: absolute;
 }
 
+
 /*Your code here*/
 /*reference: http://nemesisdesign.net/blog/accessibility/nice-css-skip-links-appearing-focus/*/
 /*Add the selector and rule to move the skip
 link to the exact top of the page.*/
-
+*:focus{
+  border-top: 2px black solid;
+}
 /*Your code here*/
 /*Add the selector and code to put a 2px black
 border around all elements in focus.*/
@@ -221,5 +222,8 @@ header p{
   .skip a{
     -webkit-transition: none;
     transition: none;
+  }
+  .skip a:focus{
+    transform: translateY(20px);
   }
 }
