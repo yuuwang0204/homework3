@@ -40,13 +40,10 @@ nav a:hover{
 
 
 .skip a{
-  background: white;
-  left: 0;
-  padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
   position: relative;
+  background: white;
+  padding: 6px;
+  z-index: 1;
   top: 40px;
   left: -500px;
 
@@ -55,15 +52,11 @@ nav a:hover{
 }
 
 .skip a:focus{
-  background: white;
-  top: 0;
-  left: 0;
-  padding: 6px;
-  -webkit-transition: top 1s ease-out;
-  transition: top 1s ease-out;
-  z-index: 1;
-  position: absolute;
-  transition: translateY(40px) translateX(500px);
+  position: relative;
+  z-index: 9999;
+  left: 50%;
+  text-align: center;
+
 }
 
 
@@ -222,8 +215,5 @@ header p{
   .skip a{
     -webkit-transition: none;
     transition: none;
-  }
-  .skip a:focus{
-    transform: translateY(20px);
   }
 }
