@@ -40,10 +40,12 @@ nav a:hover{
 
 
 .skip a{
-  position: relative;
   background: white;
   padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
   z-index: 1;
+  position: relative;
   top: 40px;
   left: -500px;
 
@@ -52,10 +54,15 @@ nav a:hover{
 }
 
 .skip a:focus{
-  position: relative;
-  z-index: 9999;
-  left: 50%;
-  text-align: center;
+  background: white;
+  top: -20px;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+
 
 }
 
